@@ -1,8 +1,16 @@
-# Getting Started with Create React App
+Welcome to the front-end development pre-assignment. In this file, you can find useful information about the whole project. Hope you enjoy it :)
+# Table of Contents
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. [How to launch the project](#how-to-launch-the-project)
+2. [Extra Feature](#extra-feature)
+2. [Structure Information](#structure-information)
+3. [Future Work](#future-work)
 
-## Available Scripts
+# How to launch the project
+First, in the project directory, run:
+
+### `npm install`
+
 
 In the project directory, you can run:
 
@@ -39,32 +47,23 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+# Extra Feature
+For the extra feature, I have added a sorting system for the songs based on their level. There is an additional dropdown under the main header with three options:
+1. Easiest First
+2. Hardest FIrst
+3. None
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+By using this feature, you can sort the whole songs based on their levels. I have used useMemo() for this feature to prevent calling the API again and sort them using API.  
+# Structure Information
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[Component Diagram](Diagram.png)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Future Work
+There are still some other things that can be done in this project to make it better/optimized. In order to make the project ready in the provided time, I decided to list all these next steps here and prevent implementing them. Here I'm going to give some possible future works for this project:
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Using React-Window and Virtualization for infinite scrolling instead of current method.
+2. Adding more detailed tests that cover various aspects of each component.
+3. Adding a modal error box to show errors while fetching data (instead of console.error).
+4. Disable level indicators in the filter box while all the filtered data is being loaded.
+5. Solve the problem with test configuration. I couldn't find the root cause of it till now.

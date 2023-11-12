@@ -1,0 +1,107 @@
+.song-artist {
+    color: #fefefe;
+    font-size: 0.8rem;
+}
+.song-title {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.song-item-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.song-image {
+    max-width: 5rem;
+    min-width: 5rem;
+    min-height: 5rem;
+    margin: 0.5rem 0 0.5rem 0.5rem;
+}
+
+.title-artist {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 5%;
+    text-align: start;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.like-button {
+    background-color: #939393;
+    -webkit-mask: url(../../assets/icons/favorite_border.svg) no-repeat center;
+    mask: url(../../assets/icons/favorite_border.svg) no-repeat center;
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 5%;
+    margin: 0 1rem 0 1rem;
+    cursor: pointer;
+}
+.like-button.liked {
+    background-color: #dc001c;
+    -webkit-mask: url(../../assets/icons/favorite.svg) no-repeat center;
+    mask: url(../../assets/icons/favorite.svg) no-repeat center;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    flex: 2;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.load {
+    height: 1rem;
+    width: 1rem;
+    margin: 0 1rem 0 1rem;
+    border:solid 0.3rem #939393;
+    border-radius: 50%;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    -webkit-transition: all 0.5s ease-in;
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 1.0s;
+    -webkit-animation-iteration-count:  infinite;
+    -webkit-animation-timing-function: linear;
+
+    transition: all 0.5s ease-in;
+    animation-name: rotate;
+    animation-duration: 1.0s;
+    animation-iteration-count:  infinite;
+    animation-timing-function: linear;
+}

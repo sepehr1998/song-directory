@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 .App {
   text-align: center;
+  overflow: hidden;
 }
 
 .App-logo {
@@ -11,6 +13,18 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+label {
+  font-size: 1rem;
 }
 
 .App-header {
@@ -36,3 +50,40 @@
     transform: rotate(360deg);
   }
 }
+
+.content-body {
+  padding: 0 20% 0 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filter {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.controllers {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+/* Adjust layout for mobile (screen width less than 768px) */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .content-body {
+    padding: 0;
+  }
+  .controllers {
+    flex-direction: column; /* Display in separate rows for mobile */
+    margin-top: 1rem;
+    align-items: center;
+  }
+}
+

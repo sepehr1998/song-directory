@@ -1,0 +1,9 @@
+.sort-options {
+    display: flex;
+    flex-direction: row;
+    margin: 1%;
+}
+.dropdown {
+    max-height: 2rem;
+    margin-left: 5%;
+}

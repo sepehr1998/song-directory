@@ -1,0 +1,41 @@
+.header {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+/* Default background image for larger screens */
+.header {
+    background-image: url("../../assets/yousician-hero.png");
+}
+
+/* Adjust background image for smaller screens (e.g., mobile devices) */
+@media (max-width: 767px) {
+    .header {
+        background-image: url("../../assets/yousician-hero-mobile.png");
+    }
+}
+
+
+h1 {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    color: white;
+    margin: 0 1rem 2rem 1rem;
+}
+
+.search {
+    width: 100%;
+    max-width: 80%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
