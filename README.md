@@ -74,19 +74,23 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 # Overview of the project
 In the following, you can see a screenshot of the web application with default settings.
 
+![Default Screen](songList.png)
+
 Here, you can see that some of the levels in the filter section are selected and the songs are filtered based on them.
 
-In this image, I'm using sort to sort the songs based on their levels.
+![Filtered Song List](withFilters.png)
 
 Here you can see how the search is working.
 
+![Searched Songs](searched.png)
+
 Finally, in this picture, you can see the appearance of the application in smaller screens to check the responsiveness.
 
- 
+![Responsive](responsive.png)
+
 # Structure Information
 
 ![Component Structure](Diagram.png)
-
 
 # Future Work
 There are still some other things that can be done in this project to make it better/optimized. In order to make the project ready in the provided time, I decided to list all these next steps here and prevent implementing them. Here I'm going to give some possible future works for this project:
