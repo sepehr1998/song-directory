@@ -1,10 +1,34 @@
-Welcome to the front-end development pre-assignment. In this file, you can find useful information about the whole project. Hope you enjoy it :)
+# Welcome!
+
+Welcome to the song-directory project!
+
+The purpose of this project is using some of the most useful tools and techniques in React in a general web project. Tools and techniques like states, hooks, virtualization, using APIs, optmizied architecture of the project, debounce, search, filter, testing and etc. 
+
+In this single page application, I will fetch a huge song list from an API and will list them by using React-Window. Also, I will filter those songs based on levels and also sort them in ascending or descending format based on their levels. Finally, there is a search bar available to search for songs based on title, artist or album. Last but not least, the whole application is designed fully responsive. So, feel free to use it by your phone, too.  
 # Table of Contents
 
-1. [How to launch the project](#how-to-launch-the-project)
-2. [Extra Feature](#extra-feature)
-2. [Structure Information](#structure-information)
-3. [Future Work](#future-work)
+1. [Tools and Techniques](#tools-and-techniques)
+2. [How to launch the project](#how-to-launch-the-project)
+3. [Overview of the project](#overview-of-the-project)
+4. [Structure Information](#structure-information)
+5. [Future Work](#future-work)
+
+# Tools and Techniques
+
+- States
+- Hooks
+- useEffect
+- Async Functions
+- Debounce
+- API calls
+- Filter
+- Sort
+- Virtualization
+- Automated testing
+- Search
+- Optimized Components Architecture
+- useMemo
+- Responsive Design
 
 # How to launch the project
 First, in the project directory, run:
@@ -47,23 +71,27 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-# Extra Feature
-For the extra feature, I have added a sorting system for the songs based on their level. There is an additional dropdown under the main header with three options:
-1. Easiest First
-2. Hardest FIrst
-3. None
+# Overview of the project
+In the following, you can see a screenshot of the web application with default settings.
 
-By using this feature, you can sort the whole songs based on their levels. I have used useMemo() for this feature to prevent calling the API again and sort them using API.  
+Here, you can see that some of the levels in the filter section are selected and the songs are filtered based on them.
+
+In this image, I'm using sort to sort the songs based on their levels.
+
+Here you can see how the search is working.
+
+Finally, in this picture, you can see the appearance of the application in smaller screens to check the responsiveness.
+
+ 
 # Structure Information
 
-[Component Diagram](Diagram.png)
+![Component Structure](Diagram.png)
 
 
 # Future Work
 There are still some other things that can be done in this project to make it better/optimized. In order to make the project ready in the provided time, I decided to list all these next steps here and prevent implementing them. Here I'm going to give some possible future works for this project:
 
-1. Using React-Window and Virtualization for infinite scrolling instead of current method.
-2. Adding more detailed tests that cover various aspects of each component.
-3. Adding a modal error box to show errors while fetching data (instead of console.error).
-4. Disable level indicators in the filter box while all the filtered data is being loaded.
-5. Solve the problem with test configuration. I couldn't find the root cause of it till now.
+1. Adding more detailed tests that cover various aspects of each component.
+2. Adding a modal error box to show errors while fetching data (instead of console.error).
+3. Disable level indicators in the filter box while all the filtered data is being loaded.
+4. Solve the problem with test configuration.
